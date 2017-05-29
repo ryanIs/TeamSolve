@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="author" content="Ryan Isler">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		
+		<script src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/style.css">
+		<!-- script src="../js/header.js"></script -->
+	</head>
+	<body class="tab-body">
+		<div class="tab-wrapper">
+			<div class="tab-buttons">
+				&nbsp;
+				<div class="shape-button tab-but" id="shape-butt">
+					<p class="unselectable" id="shape-text">0</p>
+				</div>
+				<div class="tab-button tab-but" id="tab-butt">
+					<!-- custom down arrow graphic (css or svg or png, get creative!) -->
+					<div class="tab-triangle" id="tab-tri"></div>
+				</div>
+				<div class="color-button tab-but tab-sel" id="color-butt">
+					<p class="unselectable" id="color-text">0</p>
+					<!-- infinite symbol: &#x221e; -->
+				</div>
+			</div>
+			<div class="tab-header">
+				<!-- 
+				This contains the drop-down for selecting different puzzles (generates on click)
+				This also contains the Level and XP (text/bar)
+				-->
+				<div class="tab-header-wrapper">
+					<select id="tab-puzzles" name="puzzles" style="display: none;">
+						<option selected class="opt-puz" id="opt-red" value="0">Puzzle for: Red (lv. 1)</span></option>
+						<option class="opt-puz" id="opt-green" value="1">Puzzle for: Green (lv. 1)</option>
+						<option class="opt-puz" id="opt-blue" value="2">Puzzle for: Blue (lv. 1)</option>
+						<option class="opt-puz" id="opt-square" value="3">Puzzle for: Square (lv. 1)</option>
+						<option class="opt-puz" id="opt-triangle" value="4">Puzzle for: Triangle (lv. 3)</option>
+						<option class="opt-puz" id="opt-pentagon" value="5">Puzzle for: Pentagon (lv. 6)</option>
+						<option class="opt-puz" id="opt-circle" value="6">Puzzle for: Circle (lv. 10)</option>
+					</select>
+					<div id="tab-xp-button-wrapper">
+						<button id="cmy-butt">CMY Piece</button>
+						<p id="tab-xp-text">Level: 1 Exp: 0 / 45</p>
+						<button id="rgb-butt" class="butt-sel">RGB Piece</button>
+					</div>
+					<div id="tab-xp-wrapper"><div id="tab-xp"></div></div>
+				</div>
+			</div> <!-- tab-header -->
+				
+			<div id="tab-puzzle-wrapper">
+				<p id="win-text">&nbsp;</p>
+				<div id="tab-puzzle">
+					
+					<div class="puzzle-board-2x2-wrapper" id="board-2x2">
+						<div class="puzzle-board puzzle-board-2x2">
+							<div class="puzzle-piece puzzle-piece-2x2"></div>
+							<div class="puzzle-piece puzzle-piece-2x2"></div>
+							<div class="puzzle-piece puzzle-piece-2x2"></div>
+							<div class="puzzle-piece puzzle-piece-2x2"></div>
+						</div>
+					</div>
+					
+					<div class="puzzle-board-3x3-wrapper" id="board-3x3">
+						<div class="puzzle-board puzzle-board-3x3">
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+							<div class="puzzle-piece puzzle-piece-3x3"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div> <!-- tab wrapper -->
+		<script type="text/javascript">
+			// This code is being ran...
+			var tabLoaded = 1;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,735 @@
+/** 
+ * style.css
+ *
+ * This file holds all the css for the TeamSolve web-pages.
+ */
+ 
+/* 						Fonts 
+__________________________________________________*/
+@font-face {
+	font-family: "DIN-Next";
+	src: url("../font/DIN-Next-W01-Light.woff");
+}
+@font-face {
+	font-family: "Robotica";
+	src: url("../font/Robotica.woff2");
+}
+
+/* 						Classes
+__________________________________________________*/
+.white-text {
+	color: #e4e4ff;
+}
+.gray-text {
+	color: #9494af;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 					root/index.php 
+__________________________________________________*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	
+}
+body {
+	width: 100%;
+	height: 100%;
+	
+	background: #fff;
+	color: #34344f;
+	font-size: 14px;
+	font-family: "Robotica", "Palatino Linotype", "Times New Roman", "Arial";
+}
+.welcome {
+	width: 100%;
+	min-height: 500px;
+	margin: 0;
+	padding: 0;
+	
+	background: #fff;
+	background: -o-linear-gradient(#fff, #e0e0e0);
+	background: -moz-linear-gradient(#fff, #e0e0e0);
+	background: -webkit-linear-gradient(#fff, #e0e0e0);
+	background: linear-gradient(#fff, #e0e0e0);
+}
+.artist {
+	width: 100%;
+	min-height: 600px;
+	margin: 0;
+	padding: 50px;
+	
+	overflow: auto;
+	font-size: 1.2em;
+	
+	background: #f0f9ff;
+	background: -o-linear-gradient(#f0f9ff, #a0afee);
+	background: -moz-linear-gradient(#f0f9ff, #a0afee);
+	background: -webkit-linear-gradient(#f0f9ff, #a0afee);
+	background: linear-gradient(#f0f9ff, #c0cfee);
+}
+.artist-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+.artist h1 {
+	margin-bottom: 50px;
+	
+	text-align: center;
+}
+.artist h4 {
+	text-align: center;
+}
+.about {
+	width: 100%;
+	min-height: 500px;
+	margin: 0;
+	padding: 50px;
+	
+	overflow: auto;
+	
+	background: #eaffea;
+	background: -o-linear-gradient(#125533, #022503);
+	background: -moz-linear-gradient(#125533, #022503);
+	background: -webkit-linear-gradient(#125533, #022503);
+	background: linear-gradient(#eaffea, #c0f1c0);
+}
+.about-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+.about h1 {
+	margin-bottom: 50px;
+	
+	text-align: center;
+}
+.about h4 {
+	text-align: center;
+}
+.
+.footer {
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding-top: 20px;
+	
+	overflow: hidden;
+	
+	background: #551233;
+	background: -o-linear-gradient(#f0fff9, #a0eeaf);
+	background: -moz-linear-gradient(#f0fff9, #a0eeaf);
+	background: -webkit-linear-gradient(#f0fff9, #a0eeaf);
+	background: linear-gradient(#fff9f0, #eecfc0);
+}
+.social-link-wrapper {
+	width: 260px;
+	height: 30px;
+	margin: 0 auto;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+}
+.social-link {
+	width: 25px;
+	height: 25px;
+	margin: 0 9px;
+	line-height: 25px;
+	display: block;
+	float: left;
+	
+	background: #ddd;
+	background: rgba(200,200,200, 0.3);
+	color: #999;
+	
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "Lucida Console";
+	
+	border-radius: 20px;
+}
+.social-link:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.social-link:active{
+	text-decoration: none;
+	color: #999;
+}
+.footer-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+.footer h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.footer p {
+	margin-bottom: 8px;
+	text-align: center;
+}
+.welcome h1 {
+	text-align: center;
+}
+.welcome h4 {
+	text-align: center;
+}
+.welcome p {
+	text-align: center;
+}
+.welcome img {
+	width: 120px;
+	height: 120px;
+	margin: 30px auto 0; 
+	padding: 10px 0 0 10px;
+	display: block;
+	
+	border:1px solid #bbb;
+	border-radius: 20px;
+	
+	border-left-color: #ff9999;
+	border-top-color: #ff3;
+	border-right-color: #9f9;
+	border-bottom-color: #99f;
+	
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+	/* transform: translateX(10px); */
+}
+#welcome-username {
+	color: #888;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+	text-align: left;
+}
+.welcome input[type="text"] {
+	width: 100%;
+	padding: 5px 11px;
+	border-radius: 12px;
+	border: 2px solid #aaa;
+	
+}
+.welcome input[type="text"]:focus, .welcome input[type="text"]:active {
+	border: 2px solid #8af;
+}
+.welcome input[type="button"], .welcome input[type="submit"] {
+	width: 70px;
+	display: block;
+	margin: 15px auto 0;
+	padding: 5px 15px;
+}
+#welcome-ui {
+	width: 300px;
+	margin: 50px auto 0;
+	padding: 20px 0;
+	
+	display: block;
+	border-top: 1px dashed #bbb;
+	border-bottom: 1px dashed #bbb;
+	
+}
+
+/* 					main/index.php 
+__________________________________________________*/
+#server-bar-wrapper {
+	width: 100%;
+	max-width: 400px;
+	height: 2px;
+	margin: 0 auto;
+	
+	display: block;
+	border-bottom: 1px solid #efefef;
+}
+#server-bar {
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+.login-container {
+	width: 120px;
+	height: 25px;
+	background: #ddd;
+	background: rgba(222,222,222,0.3);
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.login-container p {
+	width: 90px;
+	line-height: 25px;
+	float: left;
+	font-size: 0.8em;
+	overflow: hidden;
+	font-family: "Arial";
+	padding: 0 5px;
+}
+#logout-button {
+	width: 25px;
+	height: 25px;
+	background: #ccc;
+	background: rgba(200,200,200,0.5);
+	float: right;
+	background-image: url('../img/power-button.png');
+	background-size: 100% 100%;
+}
+#title-message {
+	margin: 25px 0 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.puzzle-wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+	display: block;
+}
+
+.puzzle-board-5x5-wrapper {
+	/*width: 210 + ([pad] * 2) + ([border-width] * 2) */
+	width: 100%;
+	min-height: 250px;
+	margin: 20px auto 0;
+	border: 5px dotted #aaa;
+	padding: 15px;
+	
+	animation: tabANI 1s infinite alternate;
+	-webkit-animation: tabANI 1s infinite alternate;
+	
+	transition: width 1s, height 1s, padding 1s;
+}
+
+.puzzle-board-5x5 {
+	width: 100%;
+	height: 250px;
+}
+
+.puzzle-board-5x5-wrapper .puzzle-piece {
+	box-shadow: inset -5px -5px 5px 5px rgba(0,0,0,0.1),
+				inset 5px 5px 5px 5px rgba(255,255,255,0.2),
+				1px 1px 2px 1px rgba(0,0,0,0.3);
+	border-radius: 0;
+	
+	transition: background-color 1s, border-color 3s;
+	-webkit-transition: background-color 1s, border-color 3s;
+}
+.puzzle-piece-5x5 {
+	width: 20%;
+	height: 20%;
+	float: left;
+	
+	border: 3px double #aaa;
+}
+
+/* 					main/tab.php 
+__________________________________________________*/
+#tab-puzzle-wrapper {
+	width: 100%;
+	height: 300px;
+	
+	background: #fff;
+	/* 
+	background: linear-gradient(#ddd 70%, #b0b0b0); 
+	border-left:3px dotted #aaa;
+	border-right:3px dotted #aaa;
+	border-bottom:3px dotted #aaa;
+	
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.2);
+	*/
+	
+}
+.puzzle-board-2x2-wrapper {
+	width: 182px;
+	height: 182px;
+	margin: 20px auto 0;
+	border: 5px dotted #aaa;
+	padding: 15px;
+	
+	animation: tabANI 1s infinite alternate;
+	-webkit-animation: tabANI 1s infinite alternate;
+	
+	transition: width 1s, height 1s, padding 1s;
+}
+.puzzle-board-2x2 {
+	width: 140px;
+	height: 140px;
+	
+}
+
+.puzzle-board-2x2 img {
+	width: 100%;
+	height: 100%;
+	
+	opacity: 0.3;
+	pointer-events: none;
+}
+.puzzle-piece {
+	box-shadow: inset -5px -5px 5px 5px rgba(0,0,0,0.1),
+				inset 5px 5px 5px 5px rgba(255,255,255,0.2),
+				1px 1px 2px 1px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	
+	transition: background-color 1s, border-color 3s;
+	-webkit-transition: background-color 1s, border-color 3s;
+}
+.puzzle-piece-2x2 {
+	width: 50%;
+	height: 50%;
+	float: left;
+	
+	border: 6px dashed #aaa; /* dashed or ridge or solid */
+}
+
+.puzzle-board-3x3-wrapper {
+	/*width: 210 + ([pad] * 2) + ([border-width] * 2) */
+	width: 250px;
+	height: 250px;
+	margin: 20px auto 0;
+	border: 5px dotted #aaa;
+	padding: 15px;
+	
+	animation: tabANI 1s infinite alternate;
+	-webkit-animation: tabANI 1s infinite alternate;
+	
+	transition: width 1s, height 1s, padding 1s;
+}
+.puzzle-board-3x3 {
+	width: 210px;
+	height: 210px;
+	
+}
+
+.puzzle-board-3x3 img {
+	width: 100%;
+	height: 100%;
+	
+	opacity: 0.3;
+	pointer-events: none;
+}
+.puzzle-piece-3x3 {
+	width: 33.333332%;
+	height: 33.333332%;
+	float: left;
+	
+	border: 6px dashed #aaa;
+}
+#tab-puzzle {
+	
+}
+#tab-puzzles {
+	display: block;
+	margin: 0 auto;
+}
+#tab-xp-wrapper {
+	width: 80%;
+	height: 20px;
+	margin: 0 auto;
+	
+	clear: both;
+	overflow: hidden;
+	
+	background: #262;
+	background: -webkit-linear-gradient(#262, #010);
+	background: -moz-linear-gradient(#262, #010);
+	background: -o-linear-gradient(#262, #010);
+	background: linear-gradient(#262, #010);
+	border: 2px inset #992;
+}
+#tab-xp-button-wrapper {
+	width: 100%;
+	height: 30px;
+	margin: 0 0 10px;
+}
+#tab-xp-button-wrapper button {
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	font-size: 0.8em;
+}
+#cmy-butt {
+	float: left;
+	margin: 0 0 0 7px;
+}
+#rgb-butt {
+	float: right;
+	margin: 0 7px 0 0;
+}
+#tab-xp-text {
+	/* jank-master 5000 */
+	padding: 0;
+	margin: 0;
+	min-width: 44%;
+	text-align: right;
+	float: left;
+	
+	overflow: hidden;
+	
+	line-height: 30px;
+}
+#win-text {
+	padding-top: 7px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+#win-text span {
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+#win-text span:nth-child(1) { /* CSS3 is godlike */
+	color: #a00;
+}
+#win-text span:nth-child(2) {
+	color: #0a0;
+}
+#win-text span:nth-child(3) {
+	color: #00a;
+}
+#win-text span:nth-child(4) {
+	color: #0aa;
+}
+#win-text span:nth-child(5) {
+	color: #a0a;
+}
+#win-text span:nth-child(6) {
+	color: #cc3;
+}
+#tab-xp {
+	width: 0%;
+	height: 16px;
+	
+	background: #0f0;
+	background-color: #0f0;
+	background: -webkit-linear-gradient(#262, #010);
+	background: -moz-linear-gradient(#262, #010);
+	background: -o-linear-gradient(#262, #010);
+	background: linear-gradient(#0f0, #070);
+	box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.6);
+	
+	transition: width 2.5s;
+	-webkit-transition: width 2.5s;
+}
+.tab-header {
+	width: 100%;
+	height: 75px;
+	
+}
+.tab-sel {
+	/* selected rgb or cmy */
+	border: 2px solid #f3f3f3;
+	border-color: #f3f3f3;
+	
+	animation: tabANI 1s infinite alternate;
+	-webkit-animation: tabANI 1s infinite alternate;
+}
+.butt-sel {
+	/* selected rgb or cmy */
+	
+	box-shadow: 0 0 4px 2px rgba(255,200,0,0.7);
+}
+@keyframes tabANI {
+	0% {
+		border-color: #f3f3f3;
+	}
+	100% {
+		border-color: #ccc;
+	}
+}
+@-webkit-keyframes tabANI {
+	0% {
+		border-color: #f3f3f3;
+	}
+	100% {
+		border-color: #ccc;
+	}
+}
+.tab-header-wrapper {
+	height: inherit;
+	padding-top: 5px;
+	
+	background: #fff;
+	/*
+	background: -webkit-linear-gradient(#fff 50%, #ddd);
+	background: -moz-linear-gradient(#fff 50%, #ddd);
+	background: -o-linear-gradient(#fff 50%, #ddd);
+	background: linear-gradient(#fff, #ddd 80%);
+	border: 3px dotted #aaa;
+	border-bottom: none;
+	border-radius: 20px 20px 0 0;
+	*/
+	border-bottom: 1px solid #c0c0c0;
+	box-shadow: 0px -3px 7px 2px rgba(0,0,0,0.2);
+}
+.tab-buttons {
+	width: 100%;
+	height: 80px;
+	
+	
+}
+.shape-button {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	
+	line-height: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	
+	color: #aaa;
+	background: #bee;
+	/*
+	background: url("../img/shape-square.png") #eee;
+	background-size: 90% 90%;
+	background-position: 3px 3px;
+	border-radius: 35px;
+	
+	box-shadow: inset -5px -5px 5px 5px rgba(0,0,0,0.1);
+	*/
+	
+}
+.tab-button {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 40%;
+	
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.5em;
+	
+	background: #5a5;
+	/*
+	background: #5a5;
+	background: -webkit-radial-gradient(#abffab, #010);
+	background: -moz-radial-gradient(#abffab, #010);
+	background: -o-radial-gradient(#abffab, #010);
+	background: linear-gradient(#5a5, #8a8 70%, #beb 90%);
+	*/
+	/* box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2); */
+}
+.tab-but {
+	border-radius: 35px;
+	box-shadow: inset -5px -5px 5px 5px rgba(0,0,0,0.1),
+				inset 5px 5px 5px 5px rgba(255,255,255,0.2),
+				1px 1px 2px 1px rgba(0,0,0,0.3);
+}
+.tab-but:hover, .tab-but:active, .tab-but:focus {
+	box-shadow: inset -5px -5px 10px 5px rgba(0,0,0,0.2),
+				1px 1px 2px 1px rgba(0,0,0,0.35);
+}
+.tab-triangle { 
+    position: relative; 
+    width: 0; 
+    height: 0; 
+    left: 28%;
+    top: 24%;
+    border-right: 30px solid transparent; 
+    border-top: 30px solid #272;
+    /* box-shadow: 3px 5px 6px 1px rgba(0,0,0,0.2); */
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg);
+    
+    pointer-events: none;
+}
+/*
+.tab-triangle:after { 
+    content: ""; 
+    position: absolute; 
+    border: 0 solid transparent; 
+    border-top: 3px solid blue;
+    border-radius: 20px 0 0 0; 
+    top: -12px; 
+    left: -9px; 
+    width: 12px; 
+    height: 12px; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+}
+*/
+.color-button {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	
+	line-height: 70px;
+	text-align: center;
+	font-size: 1.5em;
+	
+	background: #ebb;
+	/*
+	background: -webkit-radial-gradient(#aff, #ebb);
+	background: -moz-radial-gradient(#aff, #ebb);
+	background: -o-radial-gradient(#aff, #ebb);
+	background: radial-gradient(#ebb,  #a88);
+	border-radius: 35px;
+	
+	box-shadow: inset -5px -5px 5px 5px rgba(0,0,0,0.1);
+	*/
+}
+.tab-button p, .color-button p, .shape-button p {
+	font-weight: bold;
+	pointer-events: none;
+}
+.tab {
+	/* iframe */
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 85%; /* TAB_CLOSED_VAR */
+	
+	
+	border: none;
+    pointer-events:auto;
+	z-index: 50;
+	
+	transition: top 1s ease-out;
+}
+.tab-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	
+	overflow: hidden;
+	
+	pointer-events: none;
+	z-index: 49;
+}
+.tab-body {
+	width: 100%;
+	height: 100%;
+	 /* POSSIBLE (visual) BUG HERE --- BE SURE TO SET SCROLL TO 0 IN 
+	 JAVASCRIPT!
+	 */
+	overflow: hidden;
+	
+	
+	background: rgba(255,255,255,0);
+}
+.tab-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
